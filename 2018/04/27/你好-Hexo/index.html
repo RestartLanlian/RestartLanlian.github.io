@@ -7,17 +7,17 @@
   
   <title>你好,Hexo | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="信息安全 演示: 使用缓存的网络凭据  入侵一个服务器 查看计算机名称   hostname 更改用户密码   net user administrator  a1! 创建用户          net user  hanligan  a1!  /add 查看缓存的凭证   net  use 删除缓存的凭证   net  use   \\sql1  /del    使用缓存的网络凭据可以干什么">
+  <meta name="description" content="第一篇博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="你好,Hexo">
 <meta property="og:url" content="http://yoursite.com/2018/04/27/你好-Hexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="信息安全 演示: 使用缓存的网络凭据  入侵一个服务器 查看计算机名称   hostname 更改用户密码   net user administrator  a1! 创建用户          net user  hanligan  a1!  /add 查看缓存的凭证   net  use 删除缓存的凭证   net  use   \\sql1  /del    使用缓存的网络凭据可以干什么">
+<meta property="og:description" content="第一篇博客">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-27T14:25:51.101Z">
+<meta property="og:updated_time" content="2018-04-27T14:27:31.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="你好,Hexo">
-<meta name="twitter:description" content="信息安全 演示: 使用缓存的网络凭据  入侵一个服务器 查看计算机名称   hostname 更改用户密码   net user administrator  a1! 创建用户          net user  hanligan  a1!  /add 查看缓存的凭证   net  use 删除缓存的凭证   net  use   \\sql1  /del    使用缓存的网络凭据可以干什么">
+<meta name="twitter:description" content="第一篇博客">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -86,36 +86,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p>信息安全<br> 演示: 使用缓存的网络凭据  入侵一个服务器</p>
-<pre><code>查看计算机名称   hostname
-更改用户密码   net user administrator  a1!
-创建用户          net user  hanligan  a1!  /add
-查看缓存的凭证   net  use
-删除缓存的凭证   net  use   \\sql1  /del
-</code></pre><p>   使用缓存的网络凭据可以干什么</p>
-<pre><code>1.   管理远程计算机上的服务
-2.   远程更改注册表  开启远程桌面    regedit
-3.  管理远程计算机   添加用户  加入管理员组
-</code></pre><p>  HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server下的fDenyTSConnections（dword类型）值设为0</p>
-<pre><code>访问默认共享   \\sql1\c$
-</code></pre><p>  删除用户和组的管理单元</p>
-<pre><code>reg  delete  &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MMC\SnapIns\{5D6179C8-17EC-11D1-9AA9-00C04FD8FE93}&quot;  /f
-</code></pre><p>  添加用户和组的管理单元</p>
-<pre><code>reg  add  &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MMC\SnapIns\{5D6179C8-17EC-11D1-9AA9-00C04FD8FE93}&quot;  /f
-</code></pre><p> 远程重启  shutdown  -m  \sql1  -r</p>
-</li>
-<li><p>信息安全包含的内容<br>网络安全<br>操作系统安全<br>数据存储安全<br>用户使用安全<br>PKI  数字证书实现的安全<br>企业级高级防火墙   保护内网安全<br>NAP    网络接入保护    只允许满足健康条件的计算机接入企业内网</p>
-</li>
-</ol>
-<ol start="3">
-<li>Windows操作系统安全<ol>
-<li>账户和组<br>   用户都有一个SID（安全标示）   zhangsan   删了   zhangsan<pre><code>li     wang
-</code></pre>   whoami  /all  查看用户的SID<br>用户登录计算机就构造用户的令牌   用户的SID  +  所属组的SID  +  用户特权<br>  用户的身份是登录时构造的<br>  把用户添加到某个组  就有了某个组的权利<br>安全措施<br>  administrator   更改管理员账户  登录名  管理员密码设置的复杂    p@ssw0rd</li>
-</ol>
-</li>
-</ol>
-<hr>
+        <p>第一篇博客</p>
 
       
     </div>
