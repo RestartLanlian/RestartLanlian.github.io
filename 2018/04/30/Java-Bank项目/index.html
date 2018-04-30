@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="El Psy Congroo !">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lanlian的博客">
-<meta property="og:url" content="http://lanlian.tech/index.html">
+<meta name="description" content="Java基础项目Bank 最近看尚硅谷的java视频，跟着写了一个小项目，在这里贴一下代码     Account 类12345678910111213141516171819202122232425//账户public class Account &amp;#123;	private double balance;//银行账户当前的余额		public Account(double init_balan">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java_Bank项目">
+<meta property="og:url" content="http://lanlian.tech/2018/04/30/Java-Bank项目/index.html">
 <meta property="og:site_name" content="Lanlian的博客">
-<meta property="og:description" content="El Psy Congroo !">
+<meta property="og:description" content="Java基础项目Bank 最近看尚硅谷的java视频，跟着写了一个小项目，在这里贴一下代码     Account 类12345678910111213141516171819202122232425//账户public class Account &amp;#123;	private double balance;//银行账户当前的余额		public Account(double init_balan">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-30T12:35:53.718Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lanlian的博客">
-<meta name="twitter:description" content="El Psy Congroo !">
+<meta name="twitter:title" content="Java_Bank项目">
+<meta name="twitter:description" content="Java基础项目Bank 最近看尚硅谷的java视频，跟着写了一个小项目，在这里贴一下代码     Account 类12345678910111213141516171819202122232425//账户public class Account &amp;#123;	private double balance;//银行账户当前的余额		public Account(double init_balan">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://lanlian.tech/"/>
+  <link rel="canonical" href="http://lanlian.tech/2018/04/30/Java-Bank项目/"/>
 
 
 
 
 
-  <title>Lanlian的博客</title>
+  <title>Java_Bank项目 | Lanlian的博客</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/04/30/Java-Bank项目/" itemprop="url">Java_Bank项目</a></h1>
+          <h1 class="post-title" itemprop="name headline">Java_Bank项目</h1>
         
 
         <div class="post-meta">
@@ -353,9 +352,7 @@
       
 
       
-        
-          
-            <h1 id="Java基础项目Bank"><a href="#Java基础项目Bank" class="headerlink" title="Java基础项目Bank"></a>Java基础项目Bank</h1><p><br></p>
+        <h1 id="Java基础项目Bank"><a href="#Java基础项目Bank" class="headerlink" title="Java基础项目Bank"></a>Java基础项目Bank</h1><p><br></p>
 <font color="black" size="4" face="微软雅黑">最近看尚硅谷的java视频，跟着写了一个小项目，在这里贴一下代码</font>
 
 
@@ -378,8 +375,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * This class creates the program to test the banking classes.</span></span><br><span class="line"><span class="comment"> * It creates a new Bank, sets the Customer (with an initial balance),</span></span><br><span class="line"><span class="comment"> * and performs a series of transactions with the Account object.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> banking.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestBanking4</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Bank bank = <span class="keyword">new</span> Bank();</span><br><span class="line">    <span class="comment">// Add Customer Jane, Simms</span></span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">    bank.addCustomer(<span class="string">"Jane"</span>, <span class="string">"Simms"</span>);</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    <span class="comment">//Add Customer Owen, Bryant</span></span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">    bank.addCustomer(<span class="string">"Owen"</span>, <span class="string">"Bryant"</span>);</span><br><span class="line">    <span class="comment">// Add Customer Tim, Soley</span></span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">    bank.addCustomer(<span class="string">"Tim"</span>, <span class="string">"Soley"</span>);</span><br><span class="line">    <span class="comment">// Add Customer Maria, Soley</span></span><br><span class="line">	<span class="comment">//code</span></span><br><span class="line">    bank.addCustomer(<span class="string">"Maria"</span>, <span class="string">"Soley"</span>);</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">int</span> i = <span class="number">0</span>; i &lt; bank.getNumOfCustomers(); i++ ) &#123;</span><br><span class="line">      Customer customer = bank.getCustomer(i);</span><br><span class="line"></span><br><span class="line">      System.out.println(<span class="string">"Customer ["</span> + (i+<span class="number">1</span>) + <span class="string">"] is "</span></span><br><span class="line">			 + customer.getLastName()</span><br><span class="line">			 + <span class="string">", "</span> + customer.getFirstName());</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
 
-          
-        
       
     </div>
     
@@ -394,14 +389,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -411,10 +412,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -422,6 +424,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -442,8 +448,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,6 +518,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Java基础项目Bank"><span class="nav-number">1.</span> <span class="nav-text">Java基础项目Bank</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -639,6 +670,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
